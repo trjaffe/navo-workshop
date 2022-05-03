@@ -45,10 +45,9 @@
       <!-- you'll usually want to say what tools/services you use;
         just edit or delete the following examples.  Be sure to
         give ivo-id attributes when you use registered resources. -->
-      <relatedResource >astropy/pyvo</relatedResource>
       <relationshipType>Cites</relationshipType>
+      <relatedResource >astropy/pyvo</relatedResource>
       <relatedResource ivo-id="ivo://org.gavo.dc/__system__/services/registry">GAVO Data Center Registry</relatedResource>
-      <relatedResource ivo-id="ivo://archive.stsci.edu/regtap">MAST STScI Registry TAP service</relatedResource>
       <relatedResource ivo-id="ivo://nasa.heasarc/services/xamin">HEASARC TAP Service</relatedResource>
       <relatedResource ivo-id="ivo://nasa.heasarc/skyview/">HEASARC SkyView SIA Service</relatedResource>
       <relatedResource ivo-id="ivo://mast.stsci/siap/galex_atlas">MAST STScI GALEX SIA Service</relatedResource>
