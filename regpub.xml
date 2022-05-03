@@ -1,0 +1,81 @@
+
+<ri:Resource 
+  status="active" 
+  xsi:type="doc:Document"
+  created="2020-01-24T00:00:00Z"
+  updated="2021-12-22T00:00:00Z"
+  xmlns:doc="http://www.ivoa.net/xml/DocRegExt/v1"
+  xmlns:vr="http://www.ivoa.net/xml/VOResource/v1.0"
+  xmlns:ri="http://www.ivoa.net/xml/RegistryInterface/v1.0">
+
+  <title>How to use Python to access astronomical data</title>
+  <identifier>navo-workshop</identifier>
+  <curation>
+    <publisher>NASA Astronomical Virtual Observatories</publisher>
+    <creator>
+      <name>NAVO Python Working Group</name>
+    </creator>
+    <!-- more creator elements as necessary -->
+    <date role="Inspected">(YYYY-DD-MM of when you last tried it)</date>
+    <contact>
+      <name>Jaffe, T.</name>
+      <email>tess.jaffe@nasa.gov</email>
+    </contact>
+  </curation>
+  <content>
+    <subject>virtual-observatories</subject>
+    <subject>software-tutorials</subject>
+    <subject>astronomy-web-services</subject>
+    <type>Archive</type>
+    <type>Catalog</type>
+    <type>Survey</type>
+    <type>Education</type>
+    <type>Outreach</type>
+    <type>EPOResource</type>
+   <description>This is a collection of notebooks that together show
+    how to use Python to retrieve data from VO services.  There are
+    science use case examples as well as tutorials that specifically
+    deal with each type of service.  There is also a single summary
+    cheat-sheet.  This resource is produced by the NASA Astronomical
+    Virtual Observatories.</description>
+    <referenceURL>https://heasarc.gsfc.nasa.gov/navo/summary/python.html</referenceURL>
+    <contentLevel>Amateur</contentLevel>
+    <contentLevel>Research</contentLevel>
+    <relationship>
+      <!-- you'll usually want to say what tools/services you use;
+        just edit or delete the following examples.  Be sure to
+        give ivo-id attributes when you use registered resources. -->
+      <relatedResource >astropy/pyvo</relatedResource>
+      <relationshipType>Cites</relationshipType>
+      <relatedResource ivo-id="ivo://org.gavo.dc/__system__/services/registry">GAVO Data Center Registry</relatedResource>
+      <relatedResource ivo-id="ivo://archive.stsci.edu/regtap">MAST STScI Registry TAP service</relatedResource>
+      <relatedResource ivo-id="ivo://nasa.heasarc/services/xamin">HEASARC TAP Service</relatedResource>
+      <relatedResource ivo-id="ivo://nasa.heasarc/skyview/">HEASARC SkyView SIA Service</relatedResource>
+      <relatedResource ivo-id="ivo://mast.stsci/siap/galex_atlas">MAST STScI GALEX SIA Service</relatedResource>
+      <relatedResource ivo-id="ivo://cxc.harvard.edu/cda.siap">CXC SIA Service</relatedResource>
+      <relatedResource ivo-id="ivo://nasa.heasarc/chanmaster">HEASARC Chandra SSA Service</relatedResource>
+      <relatedResource ivo-id="ivo://irsa.ipac/wise/images/allwise/l3a">IRSA AllWISE SIA Service</relatedResource>
+      <relatedResource ivo-id="ivo://sdss.jhu/services/siap-images">JHU SDSS SIA Service</relatedResource>
+      <relatedResource>NASA/IPAC Extragalactic Database</relatedResource>
+      <relatedResource>Astropy</relatedResource>
+      <relatedResource>Astroquery</relatedResource>
+      <relatedResource>Matplotlib</relatedResource>
+      <relatedResource>Numpy</relatedResource>
+      <relatedResource>APLpy</relatedResource>
+  </relationship>
+  </content>
+
+  <capability xsi:type="doc:Edition">
+    <interface role="rendered" xsi:type="vr:WebBrowser">
+      <accessURL use="full">https://nasa-navo.github.io/navo-workshop/</accessURL>
+    </interface>
+    <interface role="source" xsi:type="vr:WebBrowser">
+      <accessURL>https://github.com/NASA-NAVO/navo-workshop/</accessURL>
+    </interface>
+    <languageCode>en</languageCode>
+    <!-- if you have translations, list en first if available,
+    and add one capability per language -->
+    <thumbnail>https://heasarc.gsfc.nasa.gov/vo/summary/screenshots/screenshot_pyvo_intro.png<thumbnail>
+    <thumbnail>https://heasarc.gsfc.nasa.gov/vo/summary/screenshots/screenshot_sdss_sia.png<thumbnail>
+  </capability>
+</ri:Resource>
